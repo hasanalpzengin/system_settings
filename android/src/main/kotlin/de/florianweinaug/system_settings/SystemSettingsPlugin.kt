@@ -76,7 +76,7 @@ public class SystemSettingsPlugin(private val registrar: Registrar): MethodCallH
     try {
       var intent: Intent = Intent(name);
       if(newTask){ intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) }
-      registrar.context().startActivity()
+      registrar.context().startActivity(intent)
     } catch (e: Exception) {
       openSystemSettings(newTask)
     }
