@@ -5,91 +5,95 @@ import 'package:flutter/services.dart';
 class SystemSettings {
   static const MethodChannel _channel = const MethodChannel('system_settings');
 
-  static Future<void> app() async {
-    return await _channel.invokeMethod('app');
+  static Future<void> app({androidNewTask=true}) async {
+    return await _channel.invokeMethod('app', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> appNotifications() async {
-    return await _channel.invokeMethod('app-notifications');
+  static Future<void> appNotifications({androidNewTask=true}) async {
+    return await _channel.invokeMethod('app-notifications', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> system() async {
-    return await _channel.invokeMethod('system');
+  static Future<void> system({androidNewTask=true}) async {
+    return await _channel.invokeMethod('system', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> location() async {
-    return await _channel.invokeMethod('location');
+  static Future<void> location({androidNewTask=true}) async {
+    return await _channel.invokeMethod('location', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> wifi() async {
-    return await _channel.invokeMethod('wifi');
+  static Future<void> wifi({androidNewTask=true}) async {
+    return await _channel.invokeMethod('wifi', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> bluetooth() async {
-    return await _channel.invokeMethod('bluetooth');
+  static Future<void> bluetooth({androidNewTask=true}) async {
+    return await _channel.invokeMethod('bluetooth', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> security() async {
-    return await _channel.invokeMethod('security');
+  static Future<void> security({androidNewTask=true}) async {
+    return await _channel.invokeMethod('security', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> display() async {
-    return await _channel.invokeMethod('display');
+  static Future<void> display({androidNewTask=true}) async {
+    return await _channel.invokeMethod('display', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> date() async {
-    return await _channel.invokeMethod('date');
+  static Future<void> date({androidNewTask=true}) async {
+    return await _channel.invokeMethod('date', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> sound() async {
-    return await _channel.invokeMethod('sound');
+  static Future<void> sound({androidNewTask=true}) async {
+    return await _channel.invokeMethod('sound', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> apps() async {
-    return await _channel.invokeMethod('apps');
+  static Future<void> apps({androidNewTask=true}) async {
+    return await _channel.invokeMethod('apps', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> wireless() async {
-    return await _channel.invokeMethod('wireless');
+  static Future<void> wireless({androidNewTask=true}) async {
+    return await _channel.invokeMethod('wireless', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> deviceInfo() async {
-    return await _channel.invokeMethod('device-info');
+  static Future<void> deviceInfo({androidNewTask=true}) async {
+    return await _channel.invokeMethod('device-info', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> dataUsage() async {
-    return await _channel.invokeMethod('data-usage');
+  static Future<void> dataUsage({androidNewTask=true}) async {
+    return await _channel.invokeMethod('data-usage', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> dataRoaming() async {
-    return await _channel.invokeMethod('data-roaming');
+  static Future<void> dataRoaming({androidNewTask=true}) async {
+    return await _channel.invokeMethod('data-roaming', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> locale() async {
-    return await _channel.invokeMethod('locale');
+  static Future<void> locale({androidNewTask=true}) async {
+    return await _channel.invokeMethod('locale', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> defaultApps() async {
-    return await _channel.invokeMethod('default-apps');
+  static Future<void> defaultApps({androidNewTask=true}) async {
+    return await _channel.invokeMethod('default-apps', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> airplaneMode() async {
-    return await _channel.invokeMethod('airplane-mode');
+  static Future<void> airplaneMode({androidNewTask=true}) async {
+    return await _channel.invokeMethod('airplane-mode', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> privacy() async {
-    return await _channel.invokeMethod('privacy');
+  static Future<void> privacy({androidNewTask=true}) async {
+    return await _channel.invokeMethod('privacy', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> accessibility() async {
-    return await _channel.invokeMethod('accessibility');
+  static Future<void> accessibility({androidNewTask=true}) async {
+    return await _channel.invokeMethod('accessibility', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> internalStorage() async {
-    return await _channel.invokeMethod('internal-storage');
+  static Future<void> internalStorage({androidNewTask=true}) async {
+    return await _channel.invokeMethod('internal-storage', {"androidNewTask": androidNewTask});
   }
 
-  static Future<void> notificationPolicy() async {
-    return await _channel.invokeMethod('notification-policy');
+  static Future<void> nfc({androidNewTask=true}) async {
+    return await _channel.invokeMethod('nfc', {"androidNewTask": androidNewTask});
+  }
+
+  static Future<void> notificationPolicy({androidNewTask=true}) async {
+    return await _channel.invokeMethod('notification-policy', {"androidNewTask": androidNewTask});
   }
 }
